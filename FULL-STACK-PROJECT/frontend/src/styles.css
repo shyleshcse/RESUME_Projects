@@ -1,0 +1,87 @@
+/* One simple CSS file for the whole app. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fa;
+  color: #222;
+}
+
+.container { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background: #0b5ed7;
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.brand { font-weight: bold; font-size: 20px; }
+.nav-links { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.nav-links a { color: white; text-decoration: none; }
+.nav-links a:hover { text-decoration: underline; }
+.who { font-size: 14px; opacity: 0.9; }
+
+/* ---------- Cards, grid ---------- */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.form-card { max-width: 420px; margin: 40px auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.grid .card { margin-bottom: 0; }
+
+/* ---------- Forms ---------- */
+label { display: block; margin: 10px 0 4px; font-size: 14px; }
+input {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 8px;
+  border: 1px solid #c5ccd6;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.row input { flex: 1; min-width: 140px; margin-bottom: 0; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
+.btn:hover { background: #0a4fb5; }
+.btn.small { padding: 5px 10px; font-size: 13px; }
+.btn.danger { background: #dc3545; }
+.btn.danger:hover { background: #b02a37; }
+
+/* ---------- Messages ---------- */
+.error { background: #fde8ea; color: #a4202e; padding: 10px; border-radius: 6px; }
+.success { background: #e3f6e8; color: #1b6e32; padding: 10px; border-radius: 6px; }
+.hint { background: #eef3fb; padding: 10px; border-radius: 6px; font-size: 13px; margin-top: 16px; }
+
+/* ---------- Tables ---------- */
+table { width: 100%; border-collapse: collapse; background: white; margin-bottom: 24px; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #e4e8ee; }
+th { background: #e9eff8; font-size: 14px; }
+
+/* ---------- Status badges ---------- */
+.badge { padding: 3px 8px; border-radius: 10px; font-size: 12px; font-weight: bold; }
+.badge.BOOKED { background: #fff3cd; color: #7a5b00; }
+.badge.COMPLETED { background: #d1f0da; color: #1b6e32; }
+.badge.CANCELLED { background: #f8d7da; color: #a4202e; }

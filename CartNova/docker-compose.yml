@@ -1,0 +1,14 @@
+# Starts a local MySQL for the backend:  docker compose up -d
+services:
+  mysql:
+    image: mysql:8
+    container_name: cartnova-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cartnova
+    ports:
+      - "3306:3306"
+    volumes:
+      - cartnova-data:/var/lib/mysql
+volumes:
+  cartnova-data:

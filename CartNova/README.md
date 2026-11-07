@@ -64,7 +64,7 @@ This repository contains **three parts**:
 Deploy the `demo/` folder to Netlify (see [Deployment](#-deployment)) and put your link here:
 
 ```
-https://YOUR-SITE-NAME.netlify.app
+https://cart-nova-online.netlify.app/
 ```
 
 **Demo logins** (for the `demo/` version): Customer `emilys` / `emilyspass` · Admin `admin` / `admin123`
